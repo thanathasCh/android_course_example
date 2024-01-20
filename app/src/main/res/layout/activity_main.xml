@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="438dp"
+        android:text="ListView Example"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycler Example"
+        app:layout_constraintEnd_toEndOf="@+id/btnListView"
+        app:layout_constraintStart_toStartOf="@+id/btnListView"
+        app:layout_constraintTop_toBottomOf="@+id/btnListView" />
+
+    <Button
+        android:id="@+id/btnFragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment 1 Example"
+        app:layout_constraintEnd_toEndOf="@+id/btnRecyclerView"
+        app:layout_constraintStart_toStartOf="@+id/btnRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecyclerView" />
+
+    <Button
+        android:id="@+id/btnFragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment 2 Example"
+        app:layout_constraintEnd_toEndOf="@+id/btnFragment1"
+        app:layout_constraintStart_toStartOf="@+id/btnFragment1"
+        app:layout_constraintTop_toBottomOf="@+id/btnFragment1" />
+
+    <Button
+        android:id="@+id/btnButtomNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buttom Navigation Example"
+        app:layout_constraintEnd_toEndOf="@+id/btnFragment2"
+        app:layout_constraintStart_toStartOf="@+id/btnFragment2"
+        app:layout_constraintTop_toBottomOf="@+id/btnFragment2" />
+
+    <Button
+        android:id="@+id/btnApiCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Api Call Example"
+        app:layout_constraintEnd_toEndOf="@+id/btnButtomNavigation"
+        app:layout_constraintStart_toStartOf="@+id/btnButtomNavigation"
+        app:layout_constraintTop_toBottomOf="@+id/btnButtomNavigation" />
+
+    <Button
+        android:id="@+id/btnUniversity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Universities"
+        app:layout_constraintEnd_toEndOf="@+id/btnApiCall"
+        app:layout_constraintStart_toStartOf="@+id/btnApiCall"
+        app:layout_constraintTop_toBottomOf="@+id/btnApiCall" />
+
+    <Button
+        android:id="@+id/btnLoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        app:layout_constraintEnd_toEndOf="@+id/btnUniversity"
+        app:layout_constraintStart_toStartOf="@+id/btnUniversity"
+        app:layout_constraintTop_toBottomOf="@+id/btnUniversity" />
+</androidx.constraintlayout.widget.ConstraintLayout>
