@@ -50,5 +50,20 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
+        view.btnResponsive.setOnClickListener {
+            val intent = Intent(this, ResponsiveScreenActivity::class.java)
+            startActivity(intent)
+        }
+
+        view.btnSearchableRecycler.setOnClickListener {
+            val intent = Intent(this, SearchableRecyclerActivity::class.java)
+            startActivity(intent)
+        }
+
+        view.btnFirebase.setOnClickListener {
+            val intent = Intent(this, FirebaseActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
