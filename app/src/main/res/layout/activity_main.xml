@@ -6,107 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnListView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="245dp"
-        android:layout_marginEnd="158dp"
-        android:layout_marginBottom="438dp"
-        android:text="ListView Example"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnRecyclerView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Recycler Example"
-        app:layout_constraintEnd_toEndOf="@+id/btnListView"
-        app:layout_constraintStart_toStartOf="@+id/btnListView"
-        app:layout_constraintTop_toBottomOf="@+id/btnListView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnFragment1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fragment 1 Example"
-        app:layout_constraintEnd_toEndOf="@+id/btnRecyclerView"
-        app:layout_constraintStart_toStartOf="@+id/btnRecyclerView"
-        app:layout_constraintTop_toBottomOf="@+id/btnRecyclerView" />
+            <Button
+                android:id="@+id/btnListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ListView Example" />
 
-    <Button
-        android:id="@+id/btnFragment2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fragment 2 Example"
-        app:layout_constraintEnd_toEndOf="@+id/btnFragment1"
-        app:layout_constraintStart_toStartOf="@+id/btnFragment1"
-        app:layout_constraintTop_toBottomOf="@+id/btnFragment1" />
+            <Button
+                android:id="@+id/btnRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recycler Example" />
 
-    <Button
-        android:id="@+id/btnButtomNavigation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Buttom Navigation Example"
-        app:layout_constraintEnd_toEndOf="@+id/btnFragment2"
-        app:layout_constraintStart_toStartOf="@+id/btnFragment2"
-        app:layout_constraintTop_toBottomOf="@+id/btnFragment2" />
+            <Button
+                android:id="@+id/btnFragment1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fragment 1 Example" />
 
-    <Button
-        android:id="@+id/btnApiCall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Api Call Example"
-        app:layout_constraintEnd_toEndOf="@+id/btnButtomNavigation"
-        app:layout_constraintStart_toStartOf="@+id/btnButtomNavigation"
-        app:layout_constraintTop_toBottomOf="@+id/btnButtomNavigation" />
+            <Button
+                android:id="@+id/btnFragment2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fragment 2 Example" />
 
-    <Button
-        android:id="@+id/btnUniversity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Universities"
-        app:layout_constraintEnd_toEndOf="@+id/btnApiCall"
-        app:layout_constraintStart_toStartOf="@+id/btnApiCall"
-        app:layout_constraintTop_toBottomOf="@+id/btnApiCall" />
+            <Button
+                android:id="@+id/btnButtomNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buttom Navigation Example" />
 
-    <Button
-        android:id="@+id/btnLoginPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login Page"
-        app:layout_constraintEnd_toEndOf="@+id/btnUniversity"
-        app:layout_constraintStart_toStartOf="@+id/btnUniversity"
-        app:layout_constraintTop_toBottomOf="@+id/btnUniversity" />
+            <Button
+                android:id="@+id/btnApiCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Api Call Example" />
 
-    <Button
-        android:id="@+id/btnResponsive"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Responsive UI"
-        app:layout_constraintEnd_toEndOf="@+id/btnLoginPage"
-        app:layout_constraintStart_toStartOf="@+id/btnLoginPage"
-        app:layout_constraintTop_toBottomOf="@+id/btnLoginPage" />
+            <Button
+                android:id="@+id/btnUniversity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Universities" />
 
-    <Button
-        android:id="@+id/btnSearchableRecycler"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Searchable Recycler"
-        app:layout_constraintEnd_toEndOf="@+id/btnResponsive"
-        app:layout_constraintStart_toStartOf="@+id/btnResponsive"
-        app:layout_constraintTop_toBottomOf="@+id/btnResponsive" />
+            <Button
+                android:id="@+id/btnLoginPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Page" />
 
-    <Button
-        android:id="@+id/btnFirebase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Firebase"
-        app:layout_constraintEnd_toEndOf="@+id/btnSearchableRecycler"
-        app:layout_constraintStart_toStartOf="@+id/btnSearchableRecycler"
-        app:layout_constraintTop_toBottomOf="@+id/btnSearchableRecycler" />
+            <Button
+                android:id="@+id/btnResponsive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Responsive UI" />
+
+            <Button
+                android:id="@+id/btnSearchableRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Searchable Recycler" />
+
+            <Button
+                android:id="@+id/btnFirebase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firebase" />
+
+            <Button
+                android:id="@+id/btnGPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS" />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera" />
+
+            <Button
+                android:id="@+id/btnNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification" />
+
+            <Button
+                android:id="@+id/btnGoogleMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google Map" />
+        </LinearLayout>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
